@@ -1,0 +1,146 @@
+header {
+	transition: all .7s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	min-height: 600px;
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: url(../../../images/dots.png);
+		background-repeat: repeat;
+		background-position: 0 0;
+		background-size: auto 100%;
+		/*adjust s value for speed*/
+		animation: animatedBackground 250s linear infinite;
+	}
+	&:after {
+		width: 0%;
+	    height: 0%;
+	    content: "";
+	    background: $brand-yellow;
+	    position: absolute;
+	    left: -150%;
+	    right: 0;
+	    top: -150%;
+	    bottom: 0;
+	    z-index: -1;
+	    transition: all 1.5s ease-in-out;
+	    transform: rotate(-45deg);
+	}
+	&.yellow {
+		&:after {
+			width: 400%;
+			height: 400%;
+		}
+	}
+	.top-bar {
+		position: relative;
+		.small-logo-holder {
+			float: left;
+			margin-left: 25px;
+    		margin-top: 25px;
+			img {
+			    max-width: 140px;
+			}
+		}
+		.rsvp-button {
+			float: right;
+			margin-right: 25px;
+    		margin-top: 25px;
+			a {
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+	.mid-section {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 100px 0;
+		overflow: hidden;
+		.section {
+			&.one {
+				position: absolute;
+			    width: 100%;
+			    text-align: center;
+			    left: 0;
+			    right: 0;
+			    top: 30%;
+			    z-index: 6;
+			    animation: popIn .7s ease-in;
+				img {
+					max-width: 752px;
+				}
+			}
+			&.two {
+			    position: absolute;
+			    width: 100%;
+			    text-align: center;
+			    left: 0;
+			    right: 0;
+			    z-index: 7;
+			    opacity: 0;
+				visibility: hidden;
+				transition: all .7s ease-in-out;
+				&.active {
+    				opacity: 1;
+    				visibility: visible;
+    			}
+				img {
+					max-width: 476px;
+				}
+			}
+			&.text {
+				opacity: 0;
+				visibility: hidden;
+				display: inline-block;
+			    width: 100%;
+			    text-align: center;
+			    z-index: 9;
+    			position: relative;
+    			transition: all .7s ease-in-out;
+    			&.active {
+    				opacity: 1;
+    				visibility: visible;
+    			}
+				.big-text {
+					color: #ffffff;
+					font-family: Montserrat;
+					font-size: 90px;
+					font-weight: 700;
+					line-height: 100px;
+					display: inline-block;
+				    width: 48%;
+				    text-align: left;
+				    max-width: 376px;
+				    vertical-align: middle;
+				}
+				.small-text {
+					color: #000000;
+					font-family: Montserrat;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+					display: inline-block;
+				    width: 48%;
+				    text-align: left;
+				    max-width: 376px;
+				    vertical-align: middle;
+				    padding-top: 60px;
+					img {
+						max-width: 176px;
+					}
+				}
+			}
+		}
+	}
+}

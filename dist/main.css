@@ -1,0 +1,140 @@
+body {
+  margin: 0; }
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0; }
+  /*use negative width if you want it to flow right to left else and positive for left to right*/
+  100% {
+    background-position: 10000px 5000px; } }
+
+@keyframes popIn {
+  0% {
+    transform: scale(0); }
+  80% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+header {
+  transition: all .7s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px; }
+  header:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../../../images/dots.png);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
+    /*adjust s value for speed*/
+    animation: animatedBackground 250s linear infinite; }
+  header:after {
+    width: 0%;
+    height: 0%;
+    content: "";
+    background: #f5c718;
+    position: absolute;
+    left: -150%;
+    right: 0;
+    top: -150%;
+    bottom: 0;
+    z-index: -1;
+    transition: all 1.5s ease-in-out;
+    transform: rotate(-45deg); }
+  header.yellow:after {
+    width: 400%;
+    height: 400%; }
+  header .top-bar {
+    position: relative; }
+    header .top-bar .small-logo-holder {
+      float: left;
+      margin-left: 25px;
+      margin-top: 25px; }
+      header .top-bar .small-logo-holder img {
+        max-width: 140px; }
+    header .top-bar .rsvp-button {
+      float: right;
+      margin-right: 25px;
+      margin-top: 25px; }
+      header .top-bar .rsvp-button a {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none; }
+  header .mid-section {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    overflow: hidden; }
+    header .mid-section .section.one {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      top: 30%;
+      z-index: 6;
+      animation: popIn .7s ease-in; }
+      header .mid-section .section.one img {
+        max-width: 752px; }
+    header .mid-section .section.two {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      z-index: 7;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .7s ease-in-out; }
+      header .mid-section .section.two.active {
+        opacity: 1;
+        visibility: visible; }
+      header .mid-section .section.two img {
+        max-width: 476px; }
+    header .mid-section .section.text {
+      opacity: 0;
+      visibility: hidden;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      z-index: 9;
+      position: relative;
+      transition: all .7s ease-in-out; }
+      header .mid-section .section.text.active {
+        opacity: 1;
+        visibility: visible; }
+      header .mid-section .section.text .big-text {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 100px;
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+        max-width: 376px;
+        vertical-align: middle; }
+      header .mid-section .section.text .small-text {
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+        max-width: 376px;
+        vertical-align: middle;
+        padding-top: 60px; }
+        header .mid-section .section.text .small-text img {
+          max-width: 176px; }

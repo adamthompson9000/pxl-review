@@ -1,0 +1,21 @@
+@keyframes animatedBackground {
+	0% {
+		background-position: 0 0;
+	}
+	/*use negative width if you want it to flow right to left else and positive for left to right*/
+	100% {
+		background-position: 10000px 5000px;
+	}
+}
+@keyframes popIn {
+	0% {
+		transform: scale(0);
+
+	}
+	80% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
