@@ -2,7 +2,7 @@ header {
 	transition: all .7s ease-in-out;
 	position: relative;
 	overflow: hidden;
-	min-height: 600px;
+	height: 100vh;
 	&:before {
 		content: "";
 		width: 100%;
@@ -74,9 +74,12 @@ header {
 			    text-align: center;
 			    left: 0;
 			    right: 0;
-			    top: 30%;
+			    top: 0;
+			    bottom: 0;
 			    z-index: 6;
 			    animation: popIn .7s ease-in;
+			    display: table;
+			    margin: auto;
 				img {
 					max-width: 752px;
 				}
@@ -87,6 +90,10 @@ header {
 			    text-align: center;
 			    left: 0;
 			    right: 0;
+			    top: 0;
+			    bottom: 0;
+			    margin: auto;
+			    display: table;
 			    z-index: 7;
 			    opacity: 0;
 				visibility: hidden;
@@ -102,11 +109,16 @@ header {
 			&.text {
 				opacity: 0;
 				visibility: hidden;
-				display: inline-block;
+				left: 0;
+			    right: 0;
+			    top: 0;
+			    bottom: 0;
+			    margin: auto;
+			    display: table;
 			    width: 100%;
 			    text-align: center;
 			    z-index: 9;
-    			position: relative;
+    			position: absolute;
     			transition: all .7s ease-in-out;
     			&.active {
     				opacity: 1;
