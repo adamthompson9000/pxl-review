@@ -1,5 +1,48 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: Aler; }
+
+@font-face {
+  font-family: 'Aler';
+  src: url("../fonts/aller/aller_rg-webfont.eot");
+  src: url("../fonts/aller/aller_rg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_rg-webfont.woff") format("woff"), url("../fonts/aller/aller_rg-webfont.ttf") format("truetype"), url("../fonts/aller/aller_rg-webfont.svg#allerregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Aller;
+  src: url("../fonts/aller/aller_bd-webfont.eot");
+  src: url("../fonts/aller/aller_bd-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_bd-webfont.woff") format("woff"), url("../fonts/aller/aller_bd-webfont.ttf") format("truetype"), url("../fonts/aller/aller_bd-webfont.svg#allerbold") format("svg");
+  font-weight: bold;
+  font-style: bold; }
+
+@font-face {
+  font-family: Aller;
+  src: url("../fonts/aller/aller_it-webfont.eot");
+  src: url("../fonts/aller/aller_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_it-webfont.woff") format("woff"), url("../fonts/aller/aller_it-webfont.ttf") format("truetype"), url("../fonts/aller/aller_it-webfont.svg#alleritalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'AllerDisplay';
+  src: url("../fonts/aller/allerdisplay-webfont.eot");
+  src: url("../fonts/aller/allerdisplay-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/allerdisplay-webfont.woff") format("woff"), url("../fonts/aller/allerdisplay-webfont.ttf") format("truetype"), url("../fonts/aller/allerdisplay-webfont.svg#aller_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AllerLight';
+  src: url("../fonts/aller/aller_lt-webfont.eot");
+  src: url("../fonts/aller/aller_lt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_lt-webfont.woff") format("woff"), url("../fonts/aller/aller_lt-webfont.ttf") format("truetype"), url("../fonts/aller/aller_lt-webfont.svg#aller_lt-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AllerLight';
+  src: url("../fonts/aller/aller_ltit-webfont.eot");
+  src: url("../fonts/aller/aller_ltit-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/aller/aller_ltit-webfont.woff") format("woff"), url("../fonts/aller/aller_ltit-webfont.ttf") format("truetype"), url("../fonts/aller/aller_ltit-webfont.svg#aller_ltit-webfont") format("svg");
+  font-weight: normal;
+  font-style: italic; }
 
 @keyframes animatedBackground {
   0% {
@@ -69,7 +112,10 @@ header {
         line-height: 24px;
         text-transform: uppercase;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .3s ease-in-out; }
+        header .top-bar .rsvp-button a:hover {
+          color: #333; }
   header .mid-section {
     max-width: 1170px;
     margin: 0 auto;
@@ -150,3 +196,203 @@ header {
         padding-top: 60px; }
         header .mid-section .section.text .small-text img {
           max-width: 176px; }
+
+.inner-header {
+  padding: 10px 0;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  background: #fff;
+  margin-bottom: -63px;
+  z-index: 99;
+  overflow: hidden;
+  margin-top: -50px; }
+  .inner-header.fixed {
+    position: fixed;
+    margin-top: -5px; }
+  .inner-header .logo-holder {
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    vertical-align: middle; }
+  .inner-header .rsvp {
+    display: block;
+    vertical-align: middle;
+    float: right;
+    padding: 18px 0px;
+    margin-right: 20px; }
+    .inner-header .rsvp a {
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Montserrat;
+      color: #333;
+      transition: all .3s ease-in-out; }
+      .inner-header .rsvp a:hover {
+        color: #f5c718; }
+
+.section {
+  position: relative; }
+  .section .container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto; }
+    .section .container .section-title {
+      text-align: center;
+      font-family: Montserrat; }
+  .section.about {
+    padding: 80px 0;
+    margin-top: 56px; }
+    .section.about .section-text {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px; }
+    .section.about:before {
+      content: "";
+      background: transparent url(../images/icons/floaty-icons.png) no-repeat scroll 0 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 2%;
+      top: 0;
+      max-width: 170px; }
+  .section.expect {
+    background: #f7f7f7;
+    padding: 80px 0; }
+    .section.expect .bubble-holder {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      margin-top: 50px; }
+      .section.expect .bubble-holder .bubble {
+        display: inline-block;
+        width: 24%; }
+        .section.expect .bubble-holder .bubble span {
+          position: relative;
+          display: table;
+          margin: 0 auto 30px;
+          border: 4px solid #f5c718;
+          border-radius: 500px;
+          height: 176px;
+          width: 176px;
+          background: #fff; }
+          .section.expect .bubble-holder .bubble span img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+        .section.expect .bubble-holder .bubble h4 {
+          color: #3c3e41;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 700; }
+    .section.expect .rsvp-btn {
+      display: table;
+      margin: 20px auto 0;
+      transition: all .3s ease-in-out; }
+      .section.expect .rsvp-btn:hover {
+        opacity: .7; }
+  .section.judges {
+    padding: 80px 0; }
+    .section.judges .people-holder {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px; }
+      .section.judges .people-holder .person {
+        width: 33%;
+        display: inline-block; }
+        .section.judges .people-holder .person h4 {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 700; }
+        .section.judges .people-holder .person i {
+          color: #f5c718;
+          font-size: 24px;
+          padding: 0 10px;
+          transition: all .3s ease-in-out; }
+          .section.judges .people-holder .person i:hover {
+            opacity: .7; }
+  .section.keynote {
+    background: #f7f7f7;
+    padding: 80px 0 0; }
+    .section.keynote .deets-holder {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+      .section.keynote .deets-holder .deets {
+        display: inline-block;
+        width: 45%;
+        vertical-align: middle;
+        text-align: left;
+        margin: 0 20px;
+        line-height: 24px; }
+        .section.keynote .deets-holder .deets .section-title {
+          text-align: left; }
+        .section.keynote .deets-holder .deets h4 {
+          font-family: Aller;
+          font-size: 16px; }
+        .section.keynote .deets-holder .deets i {
+          color: #f5c718;
+          font-size: 24px;
+          padding: 0 10px;
+          transition: all .3s ease-in-out; }
+          .section.keynote .deets-holder .deets i:hover {
+            opacity: .7; }
+      .section.keynote .deets-holder .main-pic {
+        width: 45%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 20px; }
+  .section.details {
+    padding: 80px 0; }
+    .section.details .content-holder {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+      .section.details .content-holder .map {
+        display: inline-block;
+        width: 45%;
+        margin: 0 20px;
+        vertical-align: middle; }
+      .section.details .content-holder .info {
+        display: inline-block;
+        width: 45%;
+        text-align: left;
+        line-height: 24px;
+        margin: 0 20px;
+        vertical-align: middle;
+        padding-left: 30px; }
+        .section.details .content-holder .info h3 {
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 700; }
+  .section.reserve {
+    padding: 80px 0;
+    background: #f5c718 url(../../../images/dots.png) repeat scroll 0 0; }
+    .section.reserve .section-title {
+      font-size: 36px;
+      margin-bottom: 30px; }
+    .section.reserve .rsvp-btn {
+      display: table;
+      margin: 20px auto 0;
+      transition: all .3s ease-in-out; }
+      .section.reserve .rsvp-btn:hover {
+        opacity: .7; }
+
+footer {
+  padding: 10px 0; }
+  footer h2 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center; }
+    footer h2 i {
+      color: #d0021b;
+      padding: 0 5px; }

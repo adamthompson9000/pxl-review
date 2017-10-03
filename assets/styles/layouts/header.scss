@@ -59,6 +59,10 @@ header {
 				text-transform: uppercase;
 				color: #fff;
 				text-decoration: none;
+				transition: all .3s ease-in-out;
+				&:hover {
+					color: #333;
+				}
 			}
 		}
 	}

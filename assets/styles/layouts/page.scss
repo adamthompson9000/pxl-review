@@ -1,0 +1,228 @@
+.inner-header {
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background: #fff;
+    margin-bottom: -63px;
+    z-index: 99;
+    overflow: hidden;
+    margin-top: -50px;
+    &.fixed {
+        position: fixed;
+        margin-top: -5px;
+    }
+    .logo-holder {
+        display: inline-block;
+        position: relative;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    .rsvp {
+        display: block;
+        vertical-align: middle;
+        float: right;
+        padding: 18px 0px;
+        margin-right: 20px;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Montserrat;
+            color: #333;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $brand-yellow;
+            }
+        }
+    }
+}
+.section {
+    position: relative;
+    .container {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        .section-title {
+            text-align: center;
+            font-family: Montserrat;
+        }
+    }
+    &.about {
+        padding: 80px 0;
+        margin-top: 56px;
+        .section-text {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        &:before {
+            content: "";
+            background: transparent url(../images/icons/floaty-icons.png) no-repeat scroll 0 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 2%;
+            top: 0;
+            max-width: 170px;
+        }
+    }
+    &.expect {
+        background: #f7f7f7;
+        padding: 80px 0;
+        .bubble-holder {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            margin-top: 50px;
+            .bubble {
+                display: inline-block;
+                width: 24%;
+                span {
+                    position: relative;
+                    display: table;
+                    margin: 0 auto 30px;
+                    border: 4px solid $brand-yellow;
+                    border-radius: 500px;
+                    height: 176px;
+                    width: 176px;
+                    background: #fff;
+                    img {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                h4 {
+                    color: #3c3e41;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .rsvp-btn {
+            display: table;
+            margin: 20px auto 0;
+            transition: all .3s ease-in-out;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+    &.judges {
+        padding: 80px 0;
+        .people-holder {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            margin-top: 50px;
+            .person {
+                width: 33%;
+                display: inline-block;
+                h4 {
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+                i {
+                    color: $brand-yellow;
+                    font-size: 24px;
+                    padding: 0 10px;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+    &.keynote {
+        background: #f7f7f7;
+        padding: 80px 0 0;
+        .deets-holder {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            .deets {
+                display: inline-block;
+                width: 45%;
+                vertical-align: middle;
+                text-align: left;
+                margin: 0 20px;
+                line-height: 24px;
+                .section-title {
+                    text-align: left;
+                }
+                h4 {
+                    font-family: Aller;
+                    font-size: 16px;
+                }
+                i {
+                    color: $brand-yellow;
+                    font-size: 24px;
+                    padding: 0 10px;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        opacity: .7;
+                    }
+                }
+            }
+            .main-pic {
+                width: 45%;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 20px;
+            }
+        }
+    }
+    &.details {
+        padding: 80px 0;
+        .content-holder {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            .map {
+                display: inline-block;
+                width: 45%;
+                margin: 0 20px;
+                vertical-align: middle;
+            }
+            .info {
+                display: inline-block;
+                width: 45%;
+                text-align: left;
+                line-height: 24px;
+                margin: 0 20px;
+                vertical-align: middle;
+                padding-left: 30px;
+                h3 {
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &.reserve {
+        padding: 80px 0;
+        background: $brand-yellow url(../../../images/dots.png) repeat scroll 0 0;
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .rsvp-btn {
+            display: table;
+            margin: 20px auto 0;
+            transition: all .3s ease-in-out;
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}

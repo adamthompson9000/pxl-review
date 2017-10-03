@@ -1,0 +1,7 @@
+<?php
+
+//RSVP page
+
+?>
+
+Woot
