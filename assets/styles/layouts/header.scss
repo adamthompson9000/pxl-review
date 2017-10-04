@@ -1,4 +1,4 @@
-header {
+header.main {
 	transition: all .7s ease-in-out;
 	position: relative;
 	overflow: hidden;
@@ -39,6 +39,7 @@ header {
 	}
 	.top-bar {
 		position: relative;
+		z-index: 9;
 		.small-logo-holder {
 			float: left;
 			margin-left: 25px;
@@ -139,6 +140,9 @@ header {
 				    text-align: left;
 				    max-width: 376px;
 				    vertical-align: middle;
+				    @media (max-width: 768px) {
+				    	width: 100%;
+				    }
 				}
 				.small-text {
 					color: #000000;
@@ -152,11 +156,35 @@ header {
 				    max-width: 376px;
 				    vertical-align: middle;
 				    padding-top: 60px;
+				    @media (max-width: 768px) {
+				    	display: none;
+				    }
 					img {
 						max-width: 176px;
 					}
 				}
 			}
 		}
+	}
+}
+header.rsvp {
+	height: 400px;
+	background: $brand-yellow url(../../../images/dots.png) repeat scroll 0 0;
+	width: 100%;
+	display: table;
+	img {
+	    max-width: 140px;
+	    position: absolute;
+	    left: 25px;
+	    top: 25px;
+	}
+	h1 {
+	    display: table-cell;
+	    text-align: center;
+	    vertical-align: middle;
+	    color: #ffffff;
+		font-family: Montserrat;
+		font-size: 48px;
+		font-weight: 700;
 	}
 }

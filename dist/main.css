@@ -59,12 +59,12 @@ body {
   100% {
     transform: scale(1); } }
 
-header {
+header.main {
   transition: all .7s ease-in-out;
   position: relative;
   overflow: hidden;
   height: 100vh; }
-  header:before {
+  header.main:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -77,7 +77,7 @@ header {
     background-size: auto 100%;
     /*adjust s value for speed*/
     animation: animatedBackground 250s linear infinite; }
-  header:after {
+  header.main:after {
     width: 0%;
     height: 0%;
     content: "";
@@ -90,22 +90,23 @@ header {
     z-index: -1;
     transition: all 1.5s ease-in-out;
     transform: rotate(-45deg); }
-  header.yellow:after {
+  header.main.yellow:after {
     width: 400%;
     height: 400%; }
-  header .top-bar {
-    position: relative; }
-    header .top-bar .small-logo-holder {
+  header.main .top-bar {
+    position: relative;
+    z-index: 9; }
+    header.main .top-bar .small-logo-holder {
       float: left;
       margin-left: 25px;
       margin-top: 25px; }
-      header .top-bar .small-logo-holder img {
+      header.main .top-bar .small-logo-holder img {
         max-width: 140px; }
-    header .top-bar .rsvp-button {
+    header.main .top-bar .rsvp-button {
       float: right;
       margin-right: 25px;
       margin-top: 25px; }
-      header .top-bar .rsvp-button a {
+      header.main .top-bar .rsvp-button a {
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 700;
@@ -114,14 +115,14 @@ header {
         color: #fff;
         text-decoration: none;
         transition: all .3s ease-in-out; }
-        header .top-bar .rsvp-button a:hover {
+        header.main .top-bar .rsvp-button a:hover {
           color: #333; }
-  header .mid-section {
+  header.main .mid-section {
     max-width: 1170px;
     margin: 0 auto;
     padding: 100px 0;
     overflow: hidden; }
-    header .mid-section .section.one {
+    header.main .mid-section .section.one {
       position: absolute;
       width: 100%;
       text-align: center;
@@ -133,9 +134,9 @@ header {
       animation: popIn .7s ease-in;
       display: table;
       margin: auto; }
-      header .mid-section .section.one img {
+      header.main .mid-section .section.one img {
         max-width: 752px; }
-    header .mid-section .section.two {
+    header.main .mid-section .section.two {
       position: absolute;
       width: 100%;
       text-align: center;
@@ -149,12 +150,12 @@ header {
       opacity: 0;
       visibility: hidden;
       transition: all .7s ease-in-out; }
-      header .mid-section .section.two.active {
+      header.main .mid-section .section.two.active {
         opacity: 1;
         visibility: visible; }
-      header .mid-section .section.two img {
+      header.main .mid-section .section.two img {
         max-width: 476px; }
-    header .mid-section .section.text {
+    header.main .mid-section .section.text {
       opacity: 0;
       visibility: hidden;
       left: 0;
@@ -168,10 +169,10 @@ header {
       z-index: 9;
       position: absolute;
       transition: all .7s ease-in-out; }
-      header .mid-section .section.text.active {
+      header.main .mid-section .section.text.active {
         opacity: 1;
         visibility: visible; }
-      header .mid-section .section.text .big-text {
+      header.main .mid-section .section.text .big-text {
         color: #ffffff;
         font-family: Montserrat;
         font-size: 90px;
@@ -182,7 +183,10 @@ header {
         text-align: left;
         max-width: 376px;
         vertical-align: middle; }
-      header .mid-section .section.text .small-text {
+        @media (max-width: 768px) {
+          header.main .mid-section .section.text .big-text {
+            width: 100%; } }
+      header.main .mid-section .section.text .small-text {
         color: #000000;
         font-family: Montserrat;
         font-size: 16px;
@@ -194,8 +198,30 @@ header {
         max-width: 376px;
         vertical-align: middle;
         padding-top: 60px; }
-        header .mid-section .section.text .small-text img {
+        @media (max-width: 768px) {
+          header.main .mid-section .section.text .small-text {
+            display: none; } }
+        header.main .mid-section .section.text .small-text img {
           max-width: 176px; }
+
+header.rsvp {
+  height: 400px;
+  background: #f5c718 url(../../../images/dots.png) repeat scroll 0 0;
+  width: 100%;
+  display: table; }
+  header.rsvp img {
+    max-width: 140px;
+    position: absolute;
+    left: 25px;
+    top: 25px; }
+  header.rsvp h1 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700; }
 
 .inner-header {
   padding: 10px 0;
@@ -248,7 +274,8 @@ header {
       max-width: 600px;
       width: 100%;
       margin: 0 auto;
-      padding: 15px; }
+      padding: 15px;
+      line-height: 24px; }
     .section.about:before {
       content: "";
       background: transparent url(../images/icons/floaty-icons.png) no-repeat scroll 0 0;
@@ -268,7 +295,8 @@ header {
       margin-top: 50px; }
       .section.expect .bubble-holder .bubble {
         display: inline-block;
-        width: 24%; }
+        width: 24%;
+        min-width: 200px; }
         .section.expect .bubble-holder .bubble span {
           position: relative;
           display: table;
@@ -298,6 +326,8 @@ header {
         opacity: .7; }
   .section.judges {
     padding: 80px 0; }
+    .section.judges.grey-bg {
+      background: #f7f7f7; }
     .section.judges .people-holder {
       display: inline-block;
       text-align: center;
@@ -305,7 +335,10 @@ header {
       margin-top: 50px; }
       .section.judges .people-holder .person {
         width: 33%;
-        display: inline-block; }
+        display: inline-block;
+        vertical-align: top;
+        min-width: 200px;
+        margin-bottom: 20px; }
         .section.judges .people-holder .person h4 {
           font-family: Montserrat;
           font-size: 16px;
@@ -320,6 +353,9 @@ header {
   .section.keynote {
     background: #f7f7f7;
     padding: 80px 0 0; }
+    @media (max-width: 768px) {
+      .section.keynote {
+        padding: 80px 0; } }
     .section.keynote .deets-holder {
       display: inline-block;
       width: 100%;
@@ -331,11 +367,20 @@ header {
         text-align: left;
         margin: 0 20px;
         line-height: 24px; }
+        @media (max-width: 768px) {
+          .section.keynote .deets-holder .deets {
+            width: 90%; } }
         .section.keynote .deets-holder .deets .section-title {
           text-align: left; }
+          @media (max-width: 768px) {
+            .section.keynote .deets-holder .deets .section-title {
+              text-align: center; } }
         .section.keynote .deets-holder .deets h4 {
           font-family: Aller;
           font-size: 16px; }
+          @media (max-width: 768px) {
+            .section.keynote .deets-holder .deets h4 {
+              text-align: center; } }
         .section.keynote .deets-holder .deets i {
           color: #f5c718;
           font-size: 24px;
@@ -343,11 +388,24 @@ header {
           transition: all .3s ease-in-out; }
           .section.keynote .deets-holder .deets i:hover {
             opacity: .7; }
+        .section.keynote .deets-holder .deets .ollier-mobile {
+          display: none; }
+          @media (max-width: 768px) {
+            .section.keynote .deets-holder .deets .ollier-mobile {
+              display: table;
+              max-width: 300px;
+              margin: 0 auto; } }
+        @media (max-width: 768px) {
+          .section.keynote .deets-holder .deets .socials {
+            text-align: center; } }
       .section.keynote .deets-holder .main-pic {
         width: 45%;
         display: inline-block;
         vertical-align: middle;
         margin: 0 20px; }
+        @media (max-width: 768px) {
+          .section.keynote .deets-holder .main-pic {
+            display: none; } }
   .section.details {
     padding: 80px 0; }
     .section.details .content-holder {
@@ -359,6 +417,9 @@ header {
         width: 45%;
         margin: 0 20px;
         vertical-align: middle; }
+        @media (max-width: 768px) {
+          .section.details .content-holder .map {
+            width: 90%; } }
       .section.details .content-holder .info {
         display: inline-block;
         width: 45%;
@@ -367,6 +428,9 @@ header {
         margin: 0 20px;
         vertical-align: middle;
         padding-left: 30px; }
+        @media (max-width: 768px) {
+          .section.details .content-holder .info {
+            width: 90%; } }
         .section.details .content-holder .info h3 {
           font-family: Montserrat;
           font-size: 24px;
@@ -383,6 +447,21 @@ header {
       transition: all .3s ease-in-out; }
       .section.reserve .rsvp-btn:hover {
         opacity: .7; }
+  .section.submit {
+    padding: 80px 0; }
+    .section.submit .gfiframe {
+      height: 500px;
+      display: table;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .section.submit .gfiframe {
+          height: 670px; } }
+      @media (max-width: 480px) {
+        .section.submit .gfiframe {
+          height: 720px; } }
 
 footer {
   padding: 10px 0; }

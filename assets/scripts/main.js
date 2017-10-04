@@ -3,7 +3,7 @@
 	//make yellow background flow across
 	setTimeout(function() {
 
-		$("header").addClass("yellow");
+		$("header.main").addClass("yellow");
 
 	}, 700);
 

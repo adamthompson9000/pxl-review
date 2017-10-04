@@ -57,6 +57,7 @@
             width: 100%;
             margin: 0 auto;
             padding: 15px;
+            line-height: 24px;
         }
         &:before {
             content: "";
@@ -80,6 +81,7 @@
             .bubble {
                 display: inline-block;
                 width: 24%;
+                min-width: 200px;
                 span {
                     position: relative;
                     display: table;
@@ -117,6 +119,9 @@
     }
     &.judges {
         padding: 80px 0;
+        &.grey-bg {
+            background: #f7f7f7;
+        }
         .people-holder {
             display: inline-block;
             text-align: center;
@@ -125,6 +130,9 @@
             .person {
                 width: 33%;
                 display: inline-block;
+                vertical-align: top;
+                min-width: 200px;
+                margin-bottom: 20px;
                 h4 {
                     font-family: Montserrat;
                     font-size: 16px;
@@ -145,6 +153,9 @@
     &.keynote {
         background: #f7f7f7;
         padding: 80px 0 0;
+        @media (max-width: 768px) {
+            padding: 80px 0;
+        }
         .deets-holder {
             display: inline-block;
             width: 100%;
@@ -156,12 +167,21 @@
                 text-align: left;
                 margin: 0 20px;
                 line-height: 24px;
+                @media (max-width: 768px) {
+                    width: 90%;
+                }
                 .section-title {
                     text-align: left;
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
                 }
                 h4 {
                     font-family: Aller;
                     font-size: 16px;
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
                 }
                 i {
                     color: $brand-yellow;
@@ -172,12 +192,28 @@
                         opacity: .7;
                     }
                 }
+                .ollier-mobile {
+                    display: none;
+                    @media (max-width: 768px) {
+                        display: table;
+                        max-width: 300px;
+                        margin: 0 auto;
+                    }
+                }
+                .socials {
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
+                }
             }
             .main-pic {
                 width: 45%;
                 display: inline-block;
                 vertical-align: middle;
                 margin: 0 20px;
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
         }
     }
@@ -192,6 +228,9 @@
                 width: 45%;
                 margin: 0 20px;
                 vertical-align: middle;
+                @media (max-width: 768px) {
+                    width: 90%;
+                }
             }
             .info {
                 display: inline-block;
@@ -201,6 +240,9 @@
                 margin: 0 20px;
                 vertical-align: middle;
                 padding-left: 30px;
+                @media (max-width: 768px) {
+                    width: 90%;
+                }
                 h3 {
                     font-family: Montserrat;
                     font-size: 24px;
@@ -222,6 +264,23 @@
             transition: all .3s ease-in-out;
             &:hover {
                 opacity: .7;
+            }
+        }
+    }
+    &.submit {
+        padding: 80px 0;
+        .gfiframe {
+            height: 500px;
+            display: table;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            @media (max-width: 768px) {
+                height: 670px;
+            }
+            @media (max-width: 480px) {
+                height: 720px;
             }
         }
     }

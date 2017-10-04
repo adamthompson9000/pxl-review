@@ -12,13 +12,13 @@
     <script src="https://use.fontawesome.com/6725307ab9.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header main">
       <div class="top-bar">
         <div class="small-logo-holder">
           <img src="/images/small-logo.png" width="100%" height="inherit" />
         </div>
         <div class="rsvp-button">
-          <a href="#">RSVP NOW</a>
+          <a href="https://www.eventbrite.com/e/pxl-review-tickets-37949340499?aff=es2" target="_blank">RSVP NOW</a>
         </div>
       </div>
       <div class="mid-section">
@@ -49,7 +49,7 @@
           <img width="141" height="50" src="/images/pxl-logo-yellow.png" />
         </div>
         <div class="rsvp">
-          <a href="#">RSVP NOW</a>
+          <a href="https://www.eventbrite.com/e/pxl-review-tickets-37949340499?aff=es2" target="_blank">RSVP NOW</a>
         </div>
       </div>
       <div class="section about">
@@ -67,7 +67,7 @@
             <div class="bubble"><span><img src="/images/icons/microphone.png" width="77" height="95" /></span><h4>Keynote</h4></div>
             <div class="bubble"><span><img src="/images/icons/pizza.png" width="69" height="90" /></span><h4>Pizza & Beer</h4></div>
           </div>
-          <a href="#" class="rsvp-btn"><img src="/images/buttons/rsvp-button.png" width="263" height="66" /></a>
+          <a href="https://www.eventbrite.com/e/pxl-review-tickets-37949340499?aff=es2" target="_blank" class="rsvp-btn"><img src="/images/buttons/rsvp-button.png" width="263" height="66" /></a>
         </div>
       </div>
       <div class="section judges">
@@ -112,6 +112,7 @@
           <div class="deets-holder">
             <div class="deets">
               <h2 class="section-title">Keynote Speaker</h2>
+              <img class="ollier-mobile" src="/images/ollier.png" width="100%" height="inherit" />
               <h4>Chris Ollier, <em>Founder of theGKWco</em></h4>
               <p>theGKWco is an Austin, Texas based Creative Strategy & Execution Agency with a focus in Brand Development, Web, Interactive & Mobile Experience Design & Development. We build mindful brands that are changing the world through fast-track strategies that focus on generating value and tangible results for all stakeholders. Simply put: Strategic Creative and Business Convergence.</p>
               <div class="socials">
@@ -151,7 +152,7 @@
       <div class="section reserve">
         <div class="container">
           <h2 class="section-title">Reserve Your Spot Today!</h2>
-          <a href="#" class="rsvp-btn"><img src="/images/buttons/rsvp-button.png" width="263" height="66" /></a>
+          <a href="https://www.eventbrite.com/e/pxl-review-tickets-37949340499?aff=es2" target="_blank" class="rsvp-btn"><img src="/images/buttons/rsvp-button.png" width="263" height="66" /></a>
         </div>
       </div>
     </div>
