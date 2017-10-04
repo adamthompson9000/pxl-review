@@ -423,6 +423,7 @@ header.webinar {
               margin: 0 auto; } }
         @media (max-width: 768px) {
           .section.keynote .deets-holder .deets .socials {
+            display: none;
             text-align: center; } }
       .section.keynote .deets-holder .main-pic {
         width: 45%;
