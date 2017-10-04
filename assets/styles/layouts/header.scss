@@ -10,7 +10,7 @@ header.main {
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: url(../../../images/dots.png);
+		background: url(../images/dots.png);
 		background-repeat: repeat;
 		background-position: 0 0;
 		background-size: auto 100%;
@@ -169,7 +169,7 @@ header.main {
 }
 header.rsvp {
 	height: 400px;
-	background: $brand-yellow url(../../../images/dots.png) repeat scroll 0 0;
+	background: $brand-yellow url(../images/dots.png) repeat scroll 0 0;
 	width: 100%;
 	display: table;
 	img {
@@ -190,7 +190,7 @@ header.rsvp {
 }
 header.webinar {
     padding: 90px 0;
-    background: $brand-yellow url(../../../images/dots.png) repeat scroll 0 0;
+    background: $brand-yellow url(../images/dots.png) repeat scroll 0 0;
 	width: 100%;
 	img {
 	    max-width: 140px;
