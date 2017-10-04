@@ -70,19 +70,19 @@
 				<h2>Webinars</h2>
 				<div class="web-holder">
 					<div class="web-post">
-						<h3>October 26, 2017 | 12:00 pm CST</h3>
+						<h3>October 27, 2017 | 12:00 pm CST</h3>
 						<h2>Defend Your Design Choices with Data</h2>
 						<p>Learn how you can influence and win over your clients/boss with data driven decisions.</p>
 						<a href="#">Learn More <i class="fa fa-chevron-right"></i></a>
 					</div>
 					<div class="web-post">
-						<h3>October 26, 2017 | 12:00 pm CST</h3>
+						<h3>October 27, 2017 | 12:00 pm CST</h3>
 						<h2>Defend Your Design Choices with Data</h2>
 						<p>Learn how you can influence and win over your clients/boss with data driven decisions.</p>
 						<a href="#">Learn More <i class="fa fa-chevron-right"></i></a>
 					</div>
 					<div class="web-post">
-						<h3>October 26, 2017 | 12:00 pm CST</h3>
+						<h3>October 27, 2017 | 12:00 pm CST</h3>
 						<h2>Defend Your Design Choices with Data</h2>
 						<p>Learn how you can influence and win over your clients/boss with data driven decisions.</p>
 						<a href="#">Learn More <i class="fa fa-chevron-right"></i></a>
