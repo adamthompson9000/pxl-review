@@ -107,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="section keynote">
+      <div class="section keynote grey-bg">
         <div class="container">
           <div class="deets-holder">
             <div class="deets">

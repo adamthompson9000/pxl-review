@@ -223,6 +223,31 @@ header.rsvp {
     font-size: 48px;
     font-weight: 700; }
 
+header.webinar {
+  padding: 90px 0;
+  background: #f5c718 url(../../../images/dots.png) repeat scroll 0 0;
+  width: 100%; }
+  header.webinar img {
+    max-width: 140px;
+    position: absolute;
+    left: 25px;
+    top: 25px; }
+  header.webinar .title {
+    width: 100%;
+    max-width: 576px;
+    margin: 0 auto;
+    text-align: center; }
+    header.webinar .title h1 {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 700; }
+    header.webinar .title h3 {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; }
+
 .inner-header {
   padding: 10px 0;
   border-bottom: 2px solid #333;
@@ -351,11 +376,12 @@ header.rsvp {
           .section.judges .people-holder .person i:hover {
             opacity: .7; }
   .section.keynote {
-    background: #f7f7f7;
     padding: 80px 0 0; }
     @media (max-width: 768px) {
       .section.keynote {
         padding: 80px 0; } }
+    .section.keynote.grey-bg {
+      background: #f7f7f7; }
     .section.keynote .deets-holder {
       display: inline-block;
       width: 100%;
@@ -449,6 +475,8 @@ header.rsvp {
         opacity: .7; }
   .section.submit {
     padding: 80px 0; }
+    .section.submit.grey-bg {
+      background: #f7f7f7; }
     .section.submit .gfiframe {
       height: 500px;
       display: table;
@@ -462,6 +490,85 @@ header.rsvp {
       @media (max-width: 480px) {
         .section.submit .gfiframe {
           height: 720px; } }
+    .section.submit.webinar .gfiframe {
+      height: 370px;
+      display: table;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 800px;
+      overflow: hidden; }
+      @media (max-width: 768px) {
+        .section.submit.webinar .gfiframe {
+          height: 470px; } }
+      @media (max-width: 480px) {
+        .section.submit.webinar .gfiframe {
+          height: 500px; } }
+  .section.description {
+    padding: 80px 0; }
+    .section.description .desc-holder {
+      width: 100%;
+      max-width: 576px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px; }
+      .section.description .desc-holder h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center; }
+  .section.webinar-posts {
+    padding: 80px 0; }
+    .section.webinar-posts.grey-bg {
+      background: #f7f7f7; }
+      .section.webinar-posts.grey-bg h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center; }
+      .section.webinar-posts.grey-bg .web-holder {
+        display: inline-block;
+        text-align: center;
+        width: 100%; }
+        .section.webinar-posts.grey-bg .web-holder .web-post {
+          width: 25%;
+          display: inline-block;
+          text-align: left;
+          padding: 30px 30px 45px;
+          background: #fff;
+          margin: 20px 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          min-width: 300px; }
+          .section.webinar-posts.grey-bg .web-holder .web-post h3 {
+            font-family: Aller;
+            font-size: 16px;
+            font-weight: 400; }
+          .section.webinar-posts.grey-bg .web-holder .web-post h2 {
+            text-align: left;
+            font-family: Aller;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px; }
+          .section.webinar-posts.grey-bg .web-holder .web-post p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 35px; }
+          .section.webinar-posts.grey-bg .web-holder .web-post a {
+            color: #f5c718;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all .3s ease-in-out; }
+            .section.webinar-posts.grey-bg .web-holder .web-post a i {
+              padding-left: 0;
+              transition: all .3s ease-in-out;
+              color: #f5c718; }
+            .section.webinar-posts.grey-bg .web-holder .web-post a:hover {
+              color: #000; }
+              .section.webinar-posts.grey-bg .web-holder .web-post a:hover i {
+                padding-left: 5px;
+                color: #000; }
 
 footer {
   padding: 10px 0; }

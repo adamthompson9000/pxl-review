@@ -151,10 +151,12 @@
         }
     }
     &.keynote {
-        background: #f7f7f7;
         padding: 80px 0 0;
         @media (max-width: 768px) {
             padding: 80px 0;
+        }
+        &.grey-bg {
+            background: #f7f7f7;
         }
         .deets-holder {
             display: inline-block;
@@ -269,6 +271,9 @@
     }
     &.submit {
         padding: 80px 0;
+        &.grey-bg {
+            background: #f7f7f7;
+        }
         .gfiframe {
             height: 500px;
             display: table;
@@ -281,6 +286,103 @@
             }
             @media (max-width: 480px) {
                 height: 720px;
+            }
+        }
+        &.webinar {
+            .gfiframe {
+                height: 370px;
+                display: table;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 800px;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                    height: 470px;
+                }
+                @media (max-width: 480px) {
+                    height: 500px;
+                }
+            }
+        }
+    }
+    &.description {
+        padding: 80px 0;
+        .desc-holder {
+            width: 100%;
+            max-width: 576px;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            h2 {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+    &.webinar-posts {
+        padding: 80px 0;
+        &.grey-bg {
+            background: #f7f7f7;
+            h2 {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+            }
+            .web-holder {
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                .web-post {
+                    width: 25%;
+                    display: inline-block;
+                    text-align: left;
+                    padding: 30px 30px 45px;
+                    background: #fff;
+                    margin: 20px 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+                    min-width: 300px;
+                    h3 {
+                        font-family: Aller;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    h2 {
+                        text-align: left;
+                        font-family: Aller;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 35px;
+                    }
+                    a {
+                        color: $brand-yellow;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        transition: all .3s ease-in-out;
+                        i {
+                            padding-left: 0;
+                            transition: all .3s ease-in-out;
+                            color: $brand-yellow;
+                        }
+                        &:hover {
+                            color: #000;
+                            i {
+                                padding-left: 5px;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
